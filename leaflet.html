@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Praktikum SIGWEB</title>
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Peta-->
+        <link rel="stylesheet" href="leaflet/leaflet.css"/>
+        <script src="leaflet/leaflet.js"></script>
+    
+        <script src="leaflet.browser.print-master/leaflet.browser.print-master/dist/leaflet.browser.print.js"></script>
+        
+        <style>
+            table {
+              font-family: 'Franklin Gothic Medium';
+              border-collapse: collapse;
+              width: 70%;
+            }
+            
+            td, th {
+              border: 1px solid #283e03;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            #map {
+		width: 1000px;
+		height: 500px;
+		
+		} 
+            </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">SIGWeb</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Peta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#content">Formulir</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">SIG Berbasis WEB</h1>
+                        <a class="btn btn-primary btn-xl" href="https://geodesi.ugm.ac.id/"><b>Teknik Geodesi UGM</b></a>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Sistem Informasi Geografis (SIG) merupakan sistem berbasis komputer yang digunakan untuk memanipulasi, menganalisis, menyimpan, dan menganalisis informasi geografis. SIG berbasis web adalah SIG yang diakses melalui internet dan dapat diakses dari berbagai perangkat seperti komputer, tablet, atau smartphone. 
+                            SIG berbasis web terdiri dari beberapa komponen seperti data spasial, data atribut, perangkat keras, perangkat lunak, dan pengguna. SIG berbasis web dapat digunakan untuk melakukan berbagai analisis seperti analisis klasifikasi, analisis overlay, analisis networking, analisis buffering, dan analisis lainnya. 
+                            Penggunaan SIG berbasis web memiliki beberapa keuntungan seperti pengumpulan data yang hemat tempat, mudah dalam pengolahan data, dan dapat diakses dari berbagai perangkat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Bahasa HTML, CSS, dan Java Script</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Ketiga bahasa tersebut adalah bahasa internet. HTML <i>(HyperText Markup Language)</i> biasanya diibaratkan sebagai objek, 
+                            CSS diibaratkan sebagai <i>style</i>, dan JavaSript diibaratkan sebagai fungsi yang menggerakan. HTML, CSS, dan JS ini memiliki struktur yang berbeda-beda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Client-Side VS Server Side</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4"> Dalam pemrograman, terdapat dua buah cara untuk memproses request dari pengguna, yaitu <i>client-side</i> dan <i>server-side</i>.
+                        <i>Client-Side</i> adalah ketika <i>script</i> dimasak pada Browser. Sedangkan, <i>server-side</i> adalah ketika <i>script</i> dimasak oleh server sebelum disajikan ke Brwoser.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Framework dan Library</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4"><i>Framework</i> dan <i>libraries</i> adalah aplikasi fungsional unik dan dapat dimanfaatkan untuk orang lain. Cakupan <i>libraries</i> lebih kecil daripada <i>framework</i>.
+                        Salah satu contoh dari <i>libraries</i> adalah JavaScript. Beberapa contoh <i>framework</i> dan <i>libraries</i> yang dapat digunakan yaitu Bootstrap dan LeafletJS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services-->
+        <center><section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Peta</h2>
+            </div>
+            <table>
+                <tr> 
+                    <td>Nama Lengkap  </td>
+                    <td>NIM</td>
+                </tr>
+                <tr>
+                    <td>Adilla Fatikha Rakhma Thifani  </td>
+                    <td>20/460237/TK/50826</td>
+                </tr> 
+            </table> 
+            <center> <div id="map"> </div> </center>
+            <script>
+             var bgnIcon = L.icon({
+                 iconUrl: 'https://cdn-icons-png.flaticon.com/512/1675/1675404.png',
+                 iconSize:     [25, 25], 
+                 iconAnchor:   [10, 25], 
+                 popupAnchor:  [0, 0] 
+             });
+             
+             var tmnIcon = L.icon({
+                 iconUrl: 'https://cdn-icons-png.flaticon.com/512/2559/2559368.png',
+                 iconSize:     [20, 20], 
+                 iconAnchor:   [10, 25], 
+                 popupAnchor:  [0, 0] 
+             });
+                     var map = L.map('map',{
+                         center: [-7.7659, 110.3787],
+                         zoom: 10
+                         });
+                 
+                         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+                         
+                            var marker1 = L.marker([-7.765008791786373, 110.37246878019785]).bindPopup('Fakultas Teknik').addTo(map);
+                            var marker2 = L.marker([-7.771263416598398, 110.3787937955433]).bindPopup('Fakultas Ilmu Budaya').addTo(map);
+                            var marker3 = L.marker([-7.766824314467687, 110.38103438205229]).bindPopup('Fakultas Kehutanan').addTo(map);
+                            var marker4 = L.marker([-7.770360138729, 110.38117204065026]).bindPopup('Fakultas Hukum').addTo(map);
+                            var marker5 = L.marker([-7.768895883002837, 110.37625371181377]).bindPopup('Fakultas Farmasi').addTo(map)
+                 </script>      
+        </section></center>
+
+        <!-- FORMULIR-->
+        <section class="page-section bg-primary" id="content">
+            <center><h1 id="M3">Formulir Validasi Pekerjaan)</h1></center>
+                    <p>Masukkan nama, password, dan alamat email anda : </p>
+                                Nama     : <input type="text" id="namaanda" style="margin-left: 34px; margin-bottom: 10px;"> <br>
+                                E-mail: <input type="email" id="email" style="margin-left: 32px; margin-bottom: 10px"> <br>
+                                Password : <input type="password" id="pass" style="margin-left: 10px; margin-bottom: 10px"> <br>
+    
+                    <button onclick="tekan()">Klik!</button>
+    
+            <script>
+                function tekan(){
+                  var pw, check, text;
+                  var check = "Selesai";
+                  pw = document.getElementById("pass").value;
+    
+            if (pw === check) {
+                text = "Password benar!";
+                alert(text);
+            }
+    
+            else{
+                text = "error";
+                alert(text);
+            }
+        }
+            </script>
+
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2025 - Adilla Fatikha Rakhma Thifani</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
